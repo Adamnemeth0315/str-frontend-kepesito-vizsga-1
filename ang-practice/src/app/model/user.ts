@@ -1,6 +1,6 @@
 export class User {
-    id?: number;
-    image: string = '';
-    name: string = '';
-    commits: number = 0;
+    login: string = '';
+    avatar_url: string = '';
+    repos_url: string = '';
+    contributions: number = 0;
 }

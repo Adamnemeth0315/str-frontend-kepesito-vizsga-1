@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="col-10 offset-1 d-flex flex-direction-row flex-wrap">
+        <div class="col-4" *ngFor="let user of userList$ | async">
+        <!-- <p> <strong>{{user.login}}</strong>
+            <img src="{{user.avatar_url}}" alt="{{user.login}}"> 
+            {{user.contributions}} 
+            <button class="btn btn-primary">
+                <a class="text-white" href="{{user.repos_url}}">View Repository</a>
+            </button>
+        </p> -->
+        <div class="card mx-5 my-4 " style="width: 18rem;">
+            <div class="card-header d-flex flex-row">
+                <img src="{{user.avatar_url}}" style="width: 6rem;" class="card-img-top m-3" alt="{{user.login}}">
+                <i class="fa fa-map-marker d-flex justify-content-end  p-4"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>{{user.login}}</strong></h5>
+              <p class="card-text"> {{user.contributions}} </p>
+              <a href="{{user.repos_url}}" class="btn btn-primary">View Repository</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
