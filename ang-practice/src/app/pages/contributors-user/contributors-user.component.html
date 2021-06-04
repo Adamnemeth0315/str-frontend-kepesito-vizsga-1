@@ -9,14 +9,17 @@
             </button>
         </p> -->
         <div class="card mx-5 my-4 " style="width: 18rem;">
-            <div class="card-header d-flex flex-row">
+            <div class=" d-flex flex-row">
                 <img src="{{user.avatar_url}}" style="width: 6rem;" class="card-img-top m-3" alt="{{user.login}}">
-                <i class="fa fa-map-marker d-flex justify-content-end  p-4"></i>
+                <small class="align-self-end">@github</small>
+                <div class="right">
+                    <i class="fa fa-crosshairs fa-2x mt-3"></i>
+                </div>
             </div>
             <div class="card-body">
               <h5 class="card-title"><strong>{{user.login}}</strong></h5>
-              <p class="card-text"> {{user.contributions}} </p>
-              <a href="{{user.repos_url}}" class="btn btn-primary">View Repository</a>
+              <p class="card-text"> {{user.contributions}} commits </p>
+              <a href="{{user.repos_url}}" class="btn btn-outline-primary">View Repository</a>
             </div>
           </div>
         </div>
